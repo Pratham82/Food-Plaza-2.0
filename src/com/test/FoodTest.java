@@ -21,6 +21,7 @@ public class FoodTest {
         int InitialChoice =0;
         char FinalChoice ;
         boolean flag;
+        int showChoice= 0;
 
         //References from other classes
         Food FoodObj = new Food();
@@ -37,7 +38,6 @@ public class FoodTest {
             System.out.println("3. Delete Food");
             System.out.println("4. Show All Food");
             System.out.println("5. Show Food by ID");
-            System.out.println("6. Show Food by Name");
 
             System.out.print("Choose any option: ");
             InitialChoice = scan.nextInt();
@@ -110,6 +110,41 @@ public class FoodTest {
                     break;
 
                 case 5:
+                    System.out.println("*****Show Food*****");
+                    System.out.println("1. Show Food by ID ");
+                    System.out.println("2. Show Food by name");
+                    System.out.print("Enter choice: ");
+                    showChoice= scan.nextInt();
+                    switch(showChoice){
+                        case 1:
+                            System.out.print("Enter Food ID: ");
+                            FoodID = scan.nextInt();
+                            FoodObj.setFoodID(FoodID);
+                            Food FoodObj2 = FoodDaoObj.ShowFoodByID(FoodID);
+                            if(FoodObj2!=null){
+                                System.out.println(FoodObj2);
+                            }else{
+                                System.out.println("Food is not present for this Food ID");
+                            }
+                            break;
+
+                        case 2:
+                            System.out.print("Enter Food Name: ");
+                            FoodName = scan.next();
+                            FoodObj.setFoodName(FoodName);
+                            List<Food> FoodList2 = FoodDaoObj.ShowFoodByName(FoodName);
+                            if(FoodList2!=null){
+                                for(Food f2: FoodList2){
+                                    System.out.println(f2);
+                                }
+                            }else{
+                                System.out.println("Food is not present for this Food Name");
+                            }
+                            break;
+
+                        default:
+                            System.out.println("Please enter valid choice");
+                    }
                     break;
                 default:
                     System.out.println("Please enter valid choice");

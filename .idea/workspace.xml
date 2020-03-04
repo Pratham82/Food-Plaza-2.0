@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="704f63d2-fc1a-44dc-879f-89d912c79a53" name="Default Changelist" comment="" />
+    <list default="true" id="704f63d2-fc1a-44dc-879f-89d912c79a53" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dao/FoodDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dao/FoodDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/dao/FoodDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dao/FoodDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/test/FoodTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/test/FoodTest.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,6 +20,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1YcHmqXy8J5hihI8Z8hXX8Vo1of" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -23,7 +31,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="D:/Downloads/Softwares/MySQL/mysql-connector-java-5.1.48/mysql-connector-java-5.1.48.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -62,30 +70,30 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="241" key="#com.intellij.ide.util.MemberChooser" timestamp="1583237435256">
+    <state x="765" y="241" key="#com.intellij.ide.util.MemberChooser" timestamp="1583321918104">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="241" key="#com.intellij.ide.util.MemberChooser/-1600.0.1600.870/0.0.1920.1050@0.0.1920.1050" timestamp="1583237435256" />
+    <state x="765" y="241" key="#com.intellij.ide.util.MemberChooser/-1600.0.1600.870/0.0.1920.1050@0.0.1920.1050" timestamp="1583321918104" />
     <state x="557" y="266" key="FileChooserDialogImpl" timestamp="1583236795267">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="557" y="266" key="FileChooserDialogImpl/-1600.0.1600.870/0.0.1920.1050@0.0.1920.1050" timestamp="1583236795267" />
-    <state width="1879" height="372" key="GridCell.Tab.0.bottom" timestamp="1583245914341">
+    <state width="638" height="972" key="GridCell.Tab.0.bottom" timestamp="1583324110461">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1879" height="372" key="GridCell.Tab.0.bottom/-1600.0.1600.870/0.0.1920.1050@0.0.1920.1050" timestamp="1583245914341" />
-    <state width="1879" height="372" key="GridCell.Tab.0.center" timestamp="1583245914341">
+    <state width="638" height="972" key="GridCell.Tab.0.bottom/-1600.0.1600.870/0.0.1920.1050@0.0.1920.1050" timestamp="1583324110461" />
+    <state width="638" height="972" key="GridCell.Tab.0.center" timestamp="1583324110461">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1879" height="372" key="GridCell.Tab.0.center/-1600.0.1600.870/0.0.1920.1050@0.0.1920.1050" timestamp="1583245914341" />
-    <state width="1879" height="372" key="GridCell.Tab.0.left" timestamp="1583245914341">
+    <state width="638" height="972" key="GridCell.Tab.0.center/-1600.0.1600.870/0.0.1920.1050@0.0.1920.1050" timestamp="1583324110461" />
+    <state width="638" height="972" key="GridCell.Tab.0.left" timestamp="1583324110461">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1879" height="372" key="GridCell.Tab.0.left/-1600.0.1600.870/0.0.1920.1050@0.0.1920.1050" timestamp="1583245914341" />
-    <state width="1879" height="372" key="GridCell.Tab.0.right" timestamp="1583245914341">
+    <state width="638" height="972" key="GridCell.Tab.0.left/-1600.0.1600.870/0.0.1920.1050@0.0.1920.1050" timestamp="1583324110461" />
+    <state width="638" height="972" key="GridCell.Tab.0.right" timestamp="1583324110461">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1879" height="372" key="GridCell.Tab.0.right/-1600.0.1600.870/0.0.1920.1050@0.0.1920.1050" timestamp="1583245914341" />
+    <state width="638" height="972" key="GridCell.Tab.0.right/-1600.0.1600.870/0.0.1920.1050@0.0.1920.1050" timestamp="1583324110461" />
     <state width="1879" height="372" key="GridCell.Tab.1.bottom" timestamp="1583245914341">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -106,5 +114,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="440" y="99" key="SettingsEditor/-1600.0.1600.870/0.0.1920.1050@0.0.1920.1050" timestamp="1583237346552" />
+    <state x="614" y="349" key="com.intellij.ide.util.TipDialog" timestamp="1583321261392">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="614" y="349" key="com.intellij.ide.util.TipDialog/-1600.0.1600.870/0.0.1920.1050@0.0.1920.1050" timestamp="1583321261392" />
   </component>
 </project>

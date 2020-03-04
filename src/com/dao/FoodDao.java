@@ -10,5 +10,7 @@ public interface FoodDao {
     boolean DeleteFood(int FoodID);
 
     List<Food> ShowAllFood();
+    Food ShowFoodByID(int FoodID);
+    List<Food> ShowFoodByName(String FoodName);
 
 }

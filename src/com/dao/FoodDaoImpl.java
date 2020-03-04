@@ -108,4 +108,52 @@ public class FoodDaoImpl implements FoodDao{
         }
         return null;
     }
+
+    //SHOW ALL FOOD//
+    @Override
+    public Food ShowFoodByID(int FoodID) {
+        try{
+            SQL = "select * from food where foodid= ?";
+            ps = con.prepareStatement(SQL);
+            ps.setInt(1,FoodID);
+            rs = ps.executeQuery();
+            while(rs.next()){
+                FoodObj = new Food();
+                FoodObj.setFoodID(rs.getInt(1));
+                FoodObj.setFoodName(rs.getString(2));
+                FoodObj.setFoodCategory(rs.getString(3));
+                FoodObj.setFoodPrice(rs.getDouble(4));
+                //return FoodObj;  //we can also return the object inside while loop
+            }
+            return FoodObj;
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+
+        return null;
+    }
+
+    @Override
+    public List<Food> ShowFoodByName(String FoodName) {
+        List<Food> FoodList2= new ArrayList<Food>();
+        try{
+            SQL ="select * from food where foodname =?";
+            ps = con.prepareStatement(SQL);
+            ps.setString(1,FoodName);
+            rs = ps.executeQuery();
+
+            while(rs.next()){
+                FoodObj= new Food();
+                FoodObj.setFoodID(rs.getInt(1));
+                FoodObj.setFoodName(rs.getString(2));
+                FoodObj.setFoodCategory(rs.getString(3));
+                FoodObj.setFoodPrice(rs.getDouble(4));
+                FoodList2.add(FoodObj);
+            }
+            return FoodList2;
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+        return null;
+    }
 }
