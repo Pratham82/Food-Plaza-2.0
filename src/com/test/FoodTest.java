@@ -37,7 +37,7 @@ public class FoodTest {
             System.out.println("2. Update Food");
             System.out.println("3. Delete Food");
             System.out.println("4. Show All Food");
-            System.out.println("5. Show Food by ID");
+            System.out.println("5. Show Food by ID/Name");
 
             System.out.print("Choose any option: ");
             InitialChoice = scan.nextInt();
@@ -100,7 +100,7 @@ public class FoodTest {
                 case 4:
                     System.out.println("*****Show All food*****");
                     FoodList = FoodDaoObj.ShowAllFood();
-                    if(FoodList!=null){
+                    if(!FoodList.isEmpty()){
                         for(Food f1: FoodList){
                             System.out.println(f1);
                         }
@@ -133,7 +133,7 @@ public class FoodTest {
                             FoodName = scan.next();
                             FoodObj.setFoodName(FoodName);
                             List<Food> FoodList2 = FoodDaoObj.ShowFoodByName(FoodName);
-                            if(FoodList2!=null){
+                            if(!FoodList2.isEmpty()){
                                 for(Food f2: FoodList2){
                                     System.out.println(f2);
                                 }
