@@ -133,7 +133,35 @@ public class CartTest {
 
                 case 5:
                     System.out.println("***** Search Items in Cart*****");
+                    System.out.println("1. Search from Cart ID ");
+                    System.out.println("2. Search from Customer email:");
+                    System.out.print("Enter choice for searching: ");
+                    SearchChoice = scan.nextInt();
+                    switch (SearchChoice){
+                        case 1:
+                            System.out.print("Enter cart ID for searching: ");
+                            CartID = scan.nextInt();
+                            c.setCartID(CartID);
+                            Cart c1= cd.SearchFromCartByID(CartID);
+                            if(c1 != null){
+                                System.out.println(c1);
+                            }else{
+                                System.out.println("Item is not available for entered Cart ID");
+                            }
+                            break;
 
+                        case 2:
+                            System.out.print("Enter Customer email for searching: ");
+                            CustomerEmail = scan.next();
+                            c.setCustomerEmail(CustomerEmail);
+                            Cart c2 =cd.SearchFromCartByCustomerEmail(CustomerEmail);
+                            if(c2 !=null){
+                                System.out.println(c2);
+                            }else{
+                                System.out.println("Item is not available for entered Cart ID");
+                            }
+                            break;
+                    }
                     break;
 
             }

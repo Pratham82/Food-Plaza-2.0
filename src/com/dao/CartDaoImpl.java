@@ -118,11 +118,44 @@ public class CartDaoImpl implements CartDao{
 
     @Override
     public Cart SearchFromCartByID(int CarID) {
+        try{
+            sql = "select * from cart where cartid = ?";
+            ps = con.prepareStatement(sql);
+            ps.setInt(1,CarID);
+            rs = ps.executeQuery();
+            while(rs.next()){
+                c = new Cart();
+                c.setCartID(rs.getInt(1));
+                c.setFoodID(rs.getInt(2));
+                c.setCustomerEmail(rs.getString(3));
+                c.setQuantity(rs.getInt(4));
+                return c;
+            }
+        }catch(Exception e){
+            e.printStackTrace();
+        }
         return null;
     }
 
     @Override
     public Cart SearchFromCartByCustomerEmail(String CustomerEmail) {
+
+        try{
+            sql = "select cartid,foodid,customeremail,quantity from cart where customeremail = ?";
+            ps = con.prepareStatement(sql);
+            ps.setString(1,CustomerEmail);
+            rs = ps.executeQuery();
+            while(rs.next()){
+                 c = new Cart();
+                 c.setCartID(rs.getInt(1));
+                 c.setFoodID(rs.getInt(2));
+                 c.setCustomerEmail(rs.getString(3));
+                 c.setQuantity(rs.getInt(4));
+                 return c;
+            }
+        }catch(Exception e){
+            e.printStackTrace();
+        }
         return null;
     }
 }
