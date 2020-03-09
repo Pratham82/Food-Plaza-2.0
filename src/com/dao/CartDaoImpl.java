@@ -119,7 +119,7 @@ public class CartDaoImpl implements CartDao{
     @Override
     public Cart SearchFromCartByID(int CarID) {
         try{
-            sql = "select * from cart where cartid = ?";
+            sql = "select c.cartid,f.foodid,f.foodname,f.foodcategory,f.foodprice, c.customeremail,c.quantity from food f inner join cart c on f.foodid = c.foodid where cartid =?";
             ps = con.prepareStatement(sql);
             ps.setInt(1,CarID);
             rs = ps.executeQuery();
@@ -127,8 +127,11 @@ public class CartDaoImpl implements CartDao{
                 c = new Cart();
                 c.setCartID(rs.getInt(1));
                 c.setFoodID(rs.getInt(2));
-                c.setCustomerEmail(rs.getString(3));
-                c.setQuantity(rs.getInt(4));
+                c.setFoodName(rs.getString(3));
+                c.setFoodCategory(rs.getString(4));
+                c.setFoodPrice(rs.getDouble(5));
+                c.setCustomerEmail(rs.getString(6));
+                c.setQuantity(rs.getInt(7));
                 return c;
             }
         }catch(Exception e){
@@ -141,16 +144,19 @@ public class CartDaoImpl implements CartDao{
     public Cart SearchFromCartByCustomerEmail(String CustomerEmail) {
 
         try{
-            sql = "select cartid,foodid,customeremail,quantity from cart where customeremail = ?";
+            sql = "select c.cartid,f.foodid,f.foodname,f.foodcategory,f.foodprice, c.customeremail,c.quantity from food f inner join cart c on f.foodid = c.foodid where customeremail=?";
             ps = con.prepareStatement(sql);
             ps.setString(1,CustomerEmail);
             rs = ps.executeQuery();
             while(rs.next()){
                  c = new Cart();
-                 c.setCartID(rs.getInt(1));
-                 c.setFoodID(rs.getInt(2));
-                 c.setCustomerEmail(rs.getString(3));
-                 c.setQuantity(rs.getInt(4));
+                c.setCartID(rs.getInt(1));
+                c.setFoodID(rs.getInt(2));
+                c.setFoodName(rs.getString(3));
+                c.setFoodCategory(rs.getString(4));
+                c.setFoodPrice(rs.getDouble(5));
+                c.setCustomerEmail(rs.getString(6));
+                c.setQuantity(rs.getInt(7));
                  return c;
             }
         }catch(Exception e){
