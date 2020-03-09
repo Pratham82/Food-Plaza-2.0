@@ -4,7 +4,6 @@
     <list default="true" id="704f63d2-fc1a-44dc-879f-89d912c79a53" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/dao/CartDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/dao/CartDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/test/CartTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/test/CartTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,7 +34,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="Application.CartTest">
+  <component name="RunManager" selected="Application.OrdersTest">
     <configuration name="CartTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.test.CartTest" />
       <module name="Food-Plaza-2.0" />
@@ -75,8 +74,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="OrdersTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.test.OrdersTest" />
+      <module name="Food-Plaza-2.0" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.OrdersTest" />
         <item itemvalue="Application.CartTest" />
         <item itemvalue="Application.CustomerTest" />
         <item itemvalue="Application.FoodTest" />
@@ -97,30 +110,30 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="241" key="#com.intellij.ide.util.MemberChooser" timestamp="1583496653360">
+    <state x="765" y="241" key="#com.intellij.ide.util.MemberChooser" timestamp="1583756728194">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="765" y="241" key="#com.intellij.ide.util.MemberChooser/-1600.0.1600.870/0.0.1920.1050@0.0.1920.1050" timestamp="1583496653360" />
+    <state x="765" y="241" key="#com.intellij.ide.util.MemberChooser/-1600.0.1600.870/0.0.1920.1050@0.0.1920.1050" timestamp="1583756728194" />
     <state x="557" y="266" key="FileChooserDialogImpl" timestamp="1583236795267">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="557" y="266" key="FileChooserDialogImpl/-1600.0.1600.870/0.0.1920.1050@0.0.1920.1050" timestamp="1583236795267" />
-    <state width="691" height="972" key="GridCell.Tab.0.bottom" timestamp="1583588938004">
+    <state width="680" height="972" key="GridCell.Tab.0.bottom" timestamp="1583761236835">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="691" height="972" key="GridCell.Tab.0.bottom/-1600.0.1600.870/0.0.1920.1050@0.0.1920.1050" timestamp="1583588938004" />
-    <state width="691" height="972" key="GridCell.Tab.0.center" timestamp="1583588938004">
+    <state width="680" height="972" key="GridCell.Tab.0.bottom/-1600.0.1600.870/0.0.1920.1050@0.0.1920.1050" timestamp="1583761236835" />
+    <state width="680" height="972" key="GridCell.Tab.0.center" timestamp="1583761236835">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="691" height="972" key="GridCell.Tab.0.center/-1600.0.1600.870/0.0.1920.1050@0.0.1920.1050" timestamp="1583588938004" />
-    <state width="691" height="972" key="GridCell.Tab.0.left" timestamp="1583588938004">
+    <state width="680" height="972" key="GridCell.Tab.0.center/-1600.0.1600.870/0.0.1920.1050@0.0.1920.1050" timestamp="1583761236835" />
+    <state width="680" height="972" key="GridCell.Tab.0.left" timestamp="1583761236835">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="691" height="972" key="GridCell.Tab.0.left/-1600.0.1600.870/0.0.1920.1050@0.0.1920.1050" timestamp="1583588938003" />
-    <state width="691" height="972" key="GridCell.Tab.0.right" timestamp="1583588938004">
+    <state width="680" height="972" key="GridCell.Tab.0.left/-1600.0.1600.870/0.0.1920.1050@0.0.1920.1050" timestamp="1583761236835" />
+    <state width="680" height="972" key="GridCell.Tab.0.right" timestamp="1583761236835">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="691" height="972" key="GridCell.Tab.0.right/-1600.0.1600.870/0.0.1920.1050@0.0.1920.1050" timestamp="1583588938004" />
+    <state width="680" height="972" key="GridCell.Tab.0.right/-1600.0.1600.870/0.0.1920.1050@0.0.1920.1050" timestamp="1583761236835" />
     <state width="1879" height="372" key="GridCell.Tab.1.bottom" timestamp="1583245914341">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
